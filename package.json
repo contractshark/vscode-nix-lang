@@ -1,0 +1,25 @@
+{
+    "name": "nix",
+    "displayName": "nix-lang",
+    "description": "Nix Lanaguage Support with an optimized grammar syntax",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nix",
+            "aliases": ["Nix", "nix"],
+            "extensions": [".nix",".nixos"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nix",
+            "scopeName": "source.nix",
+            "path": "./syntaxes/nix.json"
+        }]
+    }
+}
